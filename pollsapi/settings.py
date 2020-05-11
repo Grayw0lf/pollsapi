@@ -41,16 +41,21 @@ REST_FRAMEWORK = {
 # Application definition
 
 INSTALLED_APPS = [
+    # Contrib apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third apps
     'rest_framework',
     'rest_framework.authtoken',
-    'polls.apps.PollsConfig',
     'rest_framework_swagger',
+
+    # Custom apps
+    'polls.apps.PollsConfig',
 ]
 
 MIDDLEWARE = [
